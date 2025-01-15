@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Empresa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo global */
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: #e6e6fa;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: white;
+            height: 100vh; /* Hace que el cuerpo ocupe toda la pantalla */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Encabezado centrado como pantalla de inicio */
+        header {
+            background-color: #f0f8ff;
+            color: white;
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            text-align: center;
+            width: 80%; /* Ajustamos el tamaño del encabezado */
+            max-width: 1200px; /* Para limitar el ancho máximo */
+            border-radius: 20px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Estilo del logo - Aseguramos que esté a la izquierda */
+        header img {
+            width: 120px; /* Logo más pequeño */
+            height: auto;
+            margin-bottom: 20px; /* Separación entre el logo y el texto */
+            position: absolute;
+            left: 20px; /* Colocamos el logo a la izquierda */
+            top: 20px; /* Colocamos el logo hacia la parte superior */
+        }
+
+        /* Contenedor del texto */
+        .texto-cuadro {
+            width: 50%;
+            background-color: #;
+            color: #000;
+            padding: 20px;
+            border-radius: 10px;
+            margin-left: 140px; /* Para que no se solape con el logo */
+        }
+
+        /* Estilo del texto */
+        .texto-cuadro h1 {
+            font-size: 1.2em; /* Texto más pequeño */
+            margin-bottom: 20px; /* Separación entre el texto y las imágenes */
+        }
+
+        /* Barra de navegación dentro del encabezado, al lado derecho */
+        nav {
+            display: flex;
+            gap: 15px;
+            justify-content: flex-end;
+            margin-top: 20px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        nav a {
+            color: #000000;
+            padding: 10px 20px;
+            font-size: 1em; /* Botones más pequeños */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 2px solid #fff;
+        }
+
+        nav a:hover {
+            background-color: lightyellow;
+            transform: scale(1.1);
+        }
+
+        nav a:active {
+            box-shadow: 0 0 10px #fff;
+            transform: scale(0.95);
+        }
+
+        /* Contenedor para las imágenes en movimiento dentro del encabezado */
+        .imagenes-cuadro {
+            width: 300px;  /* Ancho ajustado de las imágenes */
+            height: 150px; /* Alto ajustado */
+            overflow: hidden;
+            border: 3px solid #fff;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .imagenes-movimiento {
+            display: flex;
+            animation: moverImagenes 10s linear infinite;
+        }
+
+        @keyframes moverImagenes {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .imagenes-movimiento img {
+            width: 225px; /* Imágenes más pequeñas */
+            height: auto;
+            margin-right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Encabezado centrado como pantalla de inicio -->
+    <header>
+        <!-- Logo en la parte superior -->
+        <img src="logo1.png" alt="Logo de Mi Empresa"> 
+        
+        <!-- Texto debajo del logo dentro de un cuadro -->
+        <div class="texto-cuadro">
+            <h1>
+               Bienvenidos a SpykeClub!<br> Especialistas en buzos y camisas que combinan estilo,<br> comodidad y actitud.<br> Encuentra las piezas perfectas para lucir único en cualquier ocasión.
+            </h1>
+        </div>
+
+        <!-- Barra de navegación dentro del encabezado -->
+        <nav>
+            <a href="producto.html">Productos</a>
+            <a href="nosotros.html">Acerca de Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html">Contactanos</a>
+        </nav>
+
+        <!-- Contenedor para las imágenes en movimiento -->
+        <div class="imagenes-cuadro">
+            <div class="imagenes-movimiento">
+                <img src="imagen1.jpg" alt="Imagen 1">
+                <img src="imagen2.jpg" alt="Imagen 2">
+                <img src="imagen3.jpg" alt="Imagen 3">
+                <img src="imagen4.jpg" alt="Imagen 4">
+                <img src="imagen5.jpg" alt="Imagen 5">
+                <img src="imagen6.jpg" alt="Imagen 6">
+            </div>
+        </div>
+    </header>
+</body>
+</html>
+
